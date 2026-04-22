@@ -206,7 +206,7 @@ html {
   position: absolute;
   inset: 0;
   min-height: 100vh;
-  background: url("https://static.wikia.nocookie.net/gensin-impact/images/8/88/May_Your_Journey_Know_No_Bounds.jpg/revision/latest/scale-to-width-down/1000?cb=20230805183804") center/cover no-repeat;
+  background: url("https://ricedigital.co.uk/wp-content/uploads/2020/11/Genshin-Impact-1.1-launch-e1605109644686.jpg") center/cover no-repeat;
   z-index: 0;
   backdrop-filter: blur(8px);
 
@@ -429,7 +429,7 @@ html {
 .redeem-card {
   width: 520px;
   height: 440px;
-  background: url("https://static.wikia.nocookie.net/gensin-impact/images/5/57/Version_1.1_Wallpaper_2.png/revision/latest/scale-to-width-down/1000?cb=20230805175132") center/cover no-repeat;
+  background: url("https://ricedigital.co.uk/wp-content/uploads/2020/11/Genshin-Impact-1.1-launch-e1605109644686.jpg") center/cover no-repeat;
   border-radius: 18px;
   overflow: hidden;
   position: relative;
