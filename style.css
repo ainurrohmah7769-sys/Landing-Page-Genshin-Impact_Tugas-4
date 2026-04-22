@@ -55,7 +55,7 @@ html {
 /* ================= HERO ================= */
 .hero{
     height:100vh;
-    background:url('image/hero.jpg') center/cover;
+    background:url('hero.jpg') center/cover;
     display:flex;
     align-items:center;
     justify-content:flex-start;
