@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genshin Impact</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+<script src="java.js" defer></script>
+
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+    <div class="logo">
+      <img src="https://www.pngmart.com/files/23/Genshin-Impact-Logo-PNG-Pic.png" /> 
+    </div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#News">News</a>
+        <a href="#Characters">Characters</a>
+        <a href="#Means">Means</a>
+        <a href="https://www.hoyolab.com/home">HoyoLAB</a>
+        <a href="#Recharge">Recharge</a>
+    </nav>
+    <a href="https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact&pcampaignid=web_share" 
+   class="btn-download" 
+   target="_blank">
+  Download
+</a>
+</header>
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero" id="Means">
+    <div class="hero-overlay">
+        <h1>Download now available for all platforms</h1>
+        <p>Genshin Impact is an open-world action role-playing game that allows the player to control one of four interchangeable characters in a party. The World Level is a measure of how strong the enemies within the world are and the rarity of rewards that defeating them gives.</p>
+        <div class="platforms">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/mac-os.png"/>
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/mac-os.png"/>
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/google-play.png"/>
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/windows-10.png"/>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CHARACTER SECTION ================= -->
+<section class="character" id="Characters">
+
+  <div class="slider">
+
+    <!-- WADAH SEMUA SLIDE -->
+    <div class="slides">
+
+      <!-- Slide 1 -->
+      <div class="slide">
+        <div class="char-img">
+          <img src="image/aelumi.png">
+        </div>
+        <div class="char-text">
+          <h2>An epic fantasy adventure game</h2>
+          <p>Experience an immersive single player adventure. As a traveler from another world, you will begin a journey to reunite with your lost family member and find yourself.</p>
+          <button onclick="downloadGame()">Download</button>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide">
+        <div class="char-img">
+          <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4481d010-1a7e-4030-829e-b6761d3c0eb1/detln4z-1c9640f4-d05f-414d-bcbb-a6435e6d62b0.png/v1/fit/w_828,h_1158/genshin_impact_art_ep_10__ningguang____tb___by_epiczone_detln4z-414w-2x.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTc5MCIsInBhdGgiOiIvZi80NDgxZDAxMC0xYTdlLTQwMzAtODI5ZS1iNjc2MWQzYzBlYjEvZGV0bG40ei0xYzk2NDBmNC1kMDVmLTQxNGQtYmNiYi1hNjQzNWU2ZDYyYjAucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.lVphb9ZKaCxtJhlbjnyZ2WUMDGPbPu_Pdl3ZwJbakPE">
+        </div>
+        <div class="char-text">
+          <h2>An epic fantasy adventure game</h2>
+          <p>Experience an immersive single player adventure. As a traveler from another world, you will begin a journey to reunite with your lost family member and find yourself.</p>
+          <button onclick="downloadGame()">Download</button>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide">
+        <div class="char-img">
+          <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4481d010-1a7e-4030-829e-b6761d3c0eb1/detlnel-beac8ebf-95d4-43be-be17-4c28b64f577c.png/v1/fit/w_828,h_1636/genshin_impact_art_ep_12__barbara____tb___by_epiczone_detlnel-414w-2x.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjUyOSIsInBhdGgiOiIvZi80NDgxZDAxMC0xYTdlLTQwMzAtODI5ZS1iNjc2MWQzYzBlYjEvZGV0bG5lbC1iZWFjOGViZi05NWQ0LTQzYmUtYmUxNy00YzI4YjY0ZjU3N2MucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.TO4VZydsI-bgyZx4MbsvPgAqbiPxuuwWDqooG3tTGbM">
+        </div>
+        <div class="char-text">
+          <h2>An epic fantasy adventure game</h2>
+          <p>Experience an immersive single player adventure. As a traveler from another world, you will begin a journey to reunite with your lost family member and find yourself.</p>
+          <button onclick="downloadGame()">Download</button>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="slide">
+        <div class="char-img">
+          <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4481d010-1a7e-4030-829e-b6761d3c0eb1/detloly-8a76b636-e81e-4645-b5e8-1858ebc6d627.png/v1/fit/w_820,h_1800/genshin_impact_art_ep_13__diluc____tb___by_epiczone_detloly-414w-2x.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjgxMCIsInBhdGgiOiIvZi80NDgxZDAxMC0xYTdlLTQwMzAtODI5ZS1iNjc2MWQzYzBlYjEvZGV0bG9seS04YTc2YjYzNi1lODFlLTQ2NDUtYjVlOC0xODU4ZWJjNmQ2MjcucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.bY9V1RI_YqRlNppIymcFeKqcUasebRd5HwI5hmLWZ9g">
+        </div>
+        <div class="char-text">
+          <h2>An epic fantasy adventure game</h2>
+          <p>Experience an immersive single player adventure. As a traveler from another world, you will begin a journey to reunite with your lost family member and find yourself.</p>
+          <button onclick="downloadGame()">Download</button>
+        </div>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="slide">
+        <div class="char-img">
+          <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5e5896a5-4a79-496a-bea4-81f26cfa2650/deeqrac-22cbb2d8-82d1-4792-8e42-9f1bbe236b42.png/v1/fit/w_828,h_1580/tartaglia_genshin_impact_full_body_render_by_deg5270_deeqrac-414w-2x.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjQ0MiIsInBhdGgiOiIvZi81ZTU4OTZhNS00YTc5LTQ5NmEtYmVhNC04MWYyNmNmYTI2NTAvZGVlcXJhYy0yMmNiYjJkOC04MmQxLTQ3OTItOGU0Mi05ZjFiYmUyMzZiNDIucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.h3YRckgcDE259Cp05cMIwVu-CZR2f1658j0SzB8susQ">
+        </div>
+        <div class="char-text">
+          <h2>An epic fantasy adventure game</h2>
+          <p>Experience an immersive single player adventure. As a traveler from another world, you will begin a journey to reunite with your lost family member and find yourself.</p>
+          <button onclick="downloadGame()">Download</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DOTS -->
+  <div class="dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+</section>
+
+<!-- ================= NEWS SECTION ================= -->
+<section class="news-section" id="News">
+  <div class="news-bg"></div>
+
+  <h2 class="news-title">News</h2>
+
+  <div class="news-container">
+    
+    <p class="recently">Recently</p>
+
+    <div class="news-content">
+      
+      <!-- LEFT BIG CARD -->
+      <div class="news-left">
+
+  <div class="news-slider">
+    <div class="news-slides">
+
+      <!-- SLIDE 1 -->
+      <div class="news-slide">
+        <img src="https://wallpapercave.com/wp/wp10365129.jpg">
+        <div class="news-text">
+          Genshin Impact Character Demo - Aloy: The Mysterious Huntress
+        </div>
+      </div>
+
+      <!-- SLIDE 2 -->
+      <div class="news-slide">
+        <img src="https://static.pressakey.de/gfxtrailer/s/Genshin-Impact-Raiden-Shogun-Judgment-of-Euthymia-Character-Trailer-40468.jpg">
+        <div class="news-text">
+          Raiden Shogun: Judgment of Euthymia
+        </div>
+      </div>
+
+      <!-- SLIDE 3 -->
+      <div class="news-slide">
+        <img src="https://vinagaming.com/wp-content/uploads/2021/11/genshin_impact_1-610x340.jpg">
+        <div class="news-text">
+          Version 2.1 Preview: Moon Over Mortals
+        </div>
+      </div>
+
+      <!-- SLIDE 4 -->
+<div class="news-slide">
+  <img src="https://cdn.vcgamers.com/news/wp-content/uploads/2022/06/kujou-sara-cover.jpg">
+  <div class="news-text">
+    Kujou Sara: Will of Thunder
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  <!--Dots2-->
+  <div class="dots2">
+  <span class="dot2 active"></span>
+  <span class="dot2"></span>
+  <span class="dot2"></span>
+  <span class="dot2"></span>
+</div>
+
+</div>
+
+      <!-- RIGHT SMALL GRID -->
+      <div class="news-right">
+        <div class="news-card">
+          <img src="https://static.pressakey.de/gfxtrailer/s/Genshin-Impact-Raiden-Shogun-Judgment-of-Euthymia-Character-Trailer-40468.jpg" alt="">
+          <div class="card-text">
+    Genshin Impact Character Demo<br>
+    Raiden Shogun: Judgment of Euthymia
+  </div>
+        </div>
+        <div class="news-card">
+          <img src="https://cdn.gamestegy.com/posts-images/raiden-shogun-rerun-or-release-date-or-when-will-raiden-shogun-release-wfFJUs4vY1.jpg?width=500&aspect_ratio=16:9" alt="">
+          <div class="card-text">
+    Genshin Impact Plot Preview<br>
+    Shogun Raiden Nightmares
+  </div>
+        </div>
+        <div class="news-card">
+          <img src="https://vinagaming.com/wp-content/uploads/2021/11/genshin_impact_1-610x340.jpg" alt="">
+          <div class="card-text">
+    Genshin Impact Version 2.1 Preview<br>
+    Moon Over Mortals
+    </div>
+        </div>
+        <div class="news-card">
+          <img src="https://cdn.vcgamers.com/news/wp-content/uploads/2022/06/kujou-sara-cover.jpg" alt="">
+          <div class="card-text">
+    Genshin Impact Character Demo<br>
+    Kujou Sara: Will of Thunder
+  </div>
+        </div>
+      </div>
+
+    </div>
+    <img class="news-character"
+       src="image/paimon.png"
+       alt="">
+  </div>
+</section>
+
+
+<!--===========REDEEMMMM==========-->
+<section class="redeem-section" id="Recharge">
+
+  <h2 class="redeem-title">Put your code</h2>
+
+  <div class="redeem-wrapper">
+
+    <!-- CARD -->
+    <div class="redeem-card">
+      <div class="redeem-overlay">
+
+        <h3>Redemption code</h3>
+
+        <div class="form-group">
+          <label>Server</label>
+          <input type="text" placeholder="Choose your server">
+        </div>
+
+        <div class="form-group">
+          <label>Nickname</label>
+          <input type="text" placeholder="Enter your nickname">
+        </div>
+
+        <div class="form-group">
+          <label>Redemption Code</label>
+          <input type="text" placeholder="Enter redemption code">
+        </div>
+
+        <button>Exchange</button>
+
+      </div>
+    </div>
+
+    <!-- INFO BOX -->
+    <div class="redeem-info">
+      <h3>About the redemption code</h3>
+      <ol>
+        <li>Before redeeming a code, make sure you have started an in-game game and linked your account.</li>
+        <li>After redeeming a code, rewards will be sent via in-game mail.</li>
+        <li>Pay attention to the validity period of the code.</li>
+        <li>Each redemption code can only be used once.</li>
+      </ol>
+    </div>
+
+      <!-- PINDAHIN KE SINI -->
+  <img class="redeem-character"
+       src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5e5896a5-4a79-496a-bea4-81f26cfa2650/deg0oro-ea3d9b6a-27eb-48f6-a94b-55dcf0c38c73.png/v1/fill/w_1280,h_1759,strp/hu_tao_genshin_impact_character_png_by_deg5270_deg0oro-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTc1OSIsInBhdGgiOiJcL2ZcLzVlNTg5NmE1LTRhNzktNDk2YS1iZWE0LTgxZjI2Y2ZhMjY1MFwvZGVnMG9yby1lYTNkOWI2YS0yN2ViLTQ4ZjYtYTk0Yi01NWRjZjBjMzhjNzMucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.NEZtMGNmIHlgacVQlbD-mNZpRRCtkYXvQ44wjXfqetY"
+       alt="">
+
+
+
+  </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer-top">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of service</a>
+    <a href="#">About us</a>
+    <a href="#">Contact us</a>
+  </div>
+
+  <div class="footer-main">
+    <!-- LEFT -->
+    <div class="footer-left">
+      <div class="footer-logos">
+        <img src="image/logomihoyo.png" alt="miHoYo">
+        <img src="https://www.pngall.com/wp-content/uploads/13/Genshin-Impact-Logo-PNG-Picture.png" alt="Genshin">
+      </div>
+
+      <div class="footer-social">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-discord"></i>
+        <i class="fab fa-reddit"></i>
+      </div>
+    </div>
+
+    <!-- DIVIDER -->
+    <div class="footer-divider"></div>
+
+    <!-- RIGHT -->
+    <div class="footer-right">
+      <img class="rating" src="https://tse2.mm.bing.net/th/id/OIP.BAugwXOD9rp0emK-kKC58QAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="rating">
+    <p>Copyright © 2020 miHoYo All Rights Reserved</p>
+    <p>PlayStation Family Mark, "PS5 logo" and "PS4 logo"...</p>
+    <p>Epic Games...</p>
+
+      <p class="small">
+        PlayStation Family Mark, “PS5 logo” and “PS4 logo” are registered trademarks of Sony Interactive Entertainment Inc.
+      </p>
+
+      <p class="small">
+        Epic, Epic Games, Epic Games Store, the Epic Games Store logo, and Epic Online Services are trademarks of Epic Games.
+      </p>
+  </div>
+</footer>
+
+<script src="java.js" defer></script>
+
+</body>
+</html>

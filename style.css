@@ -1,0 +1,661 @@
+html {
+  scroll-behavior: smooth;
+}
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ================= NAVBAR DEFAULT (TRANSPARAN) ================= */
+.logo img{
+    height: 65px;
+    width: auto;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    background-color: #000;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a{
+    color:rgb(255, 255, 255);
+    margin:0 15px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.navbar a:hover{
+    color:#00c3ff;
+}
+
+/* ================= SAAT SCROLL ================= */
+.navbar.scrolled{
+    background: rgba(0,0,0,0.6); /* jadi gelap */
+    backdrop-filter: blur(10px); /* efek blur keren */
+    padding: 15px 50px; /* sedikit mengecil */
+}
+
+.btn-download{
+    background:#00c3ff;
+    border:none;
+    padding:10px 20px;
+    color:white;
+    border-radius:20px;
+}
+
+/* ================= HERO ================= */
+.hero{
+    height:100vh;
+    background:url('image/hero.jpg') center/cover;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    padding-left: 200px; /* jarak dari kiri */
+    margin-top: 80px;
+}
+
+.hero-overlay{
+    background: #000;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    color:white;
+    max-width: 560px;
+    text-align: left;
+}
+
+.platforms img{
+    width:40px;
+    margin:10px;
+    transition:0.3s;
+}
+
+.platforms img:hover{
+    transform:scale(1.2);
+}
+
+/*========SLIDE========*/
+.slider {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  height: 100%;
+  width: 100%;
+  display: flex;              
+  flex-direction: row;        
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;            
+  flex-shrink: 0;             
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 60px;
+}
+
+/* ================= CHARACTER ================= */
+.character{
+  height: 100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position: relative; /* WAJIB biar dots ngikut section ini */
+    padding-bottom: 60px; /* kasih ruang di bawah */
+    padding:80px;
+    gap:50px;
+    background:#f5f5f5;
+}
+
+.char-img {
+  width: 400px;   /* BESARIN */
+  height: 500px;  /* BESARIN */
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.char-img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* biar gak kepotong */
+}
+
+.char-text{
+    max-width:400px;
+}
+
+.char-text button{
+    margin-top:20px;
+    padding:10px 20px;
+    background:#00c3ff;
+    border:none;
+    color:white;
+    border-radius:10px;
+}
+
+/*===========BUAT BULET BULET BIRU GESER GESER==============*/
+.dots{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 15px;   /* jarak dari bawah */
+    transform: translateX(-50%);
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    background: #ccc; /* abu */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* DOT AKTIF (biru) */
+.dot.active{
+    background: #2ea3f2;
+    transform: scale(1.2);
+}
+
+/* ===== NEWS SECTION ===== */
+.news-title {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-size: 32px;
+  color: white;
+  font-weight: bold;
+  z-index: 3;
+}
+
+.news-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  color: white;
+  z-index: 0;
+  overflow: visible;
+}
+
+/* Background blur */
+.news-bg {
+  position: absolute;
+  inset: 0;
+  min-height: 100vh;
+  background: url("https://static.wikia.nocookie.net/gensin-impact/images/8/88/May_Your_Journey_Know_No_Bounds.jpg/revision/latest/scale-to-width-down/1000?cb=20230805183804") center/cover no-repeat;
+  z-index: 0;
+  backdrop-filter: blur(8px);
+
+}
+
+/* 🔥 OVERLAY GELAP */
+.news-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.5); /* atur gelapnya di sini */
+}
+
+/* Title */
+.news-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Container glass */
+.news-container {
+  width: 80%;
+  margin: auto;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+}
+
+/* Recently text */
+.recently {
+  margin-bottom: 15px;
+  color: #ccc;
+}
+
+/* Layout */
+.news-content {
+  display: flex;
+  gap: 20px;
+}
+
+/*slide news*/
+.news-slider {
+  width: 100%;
+  overflow: hidden;
+  border: 2px solid rgba(255,255,255,0.6);
+
+  box-shadow: 
+    0 0 10px rgba(255,255,255,0.5),
+    0 0 25px rgba(255,255,255,0.3);
+}
+
+.news-slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.news-slide {
+  min-width: 100%;
+  position: relative;
+}
+
+.news-slide img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/*dot news*/
+.dots2 {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+  transform: translateX(-50%);
+}
+
+.dot2 {
+  width: 8px;
+  height: 8px;
+  background: #000000;
+  opacity: 70%;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dot2.active {
+  background: #ffffff;
+  transform: scale(1.2);
+}
+
+/* LEFT */
+.news-left {
+  flex: 2;
+  position: relative;
+}
+
+.news-left img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.news-text {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  font-size: 14px;
+  background: rgba(0,0,0,0.6);
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+/* RIGHT GRID */
+.news-right {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.news-card {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.news-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.news-card img:hover {
+  transform: scale(1.05);
+}
+
+/* efek gelap bawah */
+.news-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: black;
+  opacity: 50%;
+}
+
+/* teks */
+.card-text {
+  position: absolute;
+  bottom: 10px;
+  left: 12px;
+  right: 12px;
+  z-index: 2;
+  color: white;
+  font-size: 11px;
+  line-height: 1.3;
+  font-weight: 500;
+}
+/* ===== CHARACTER ===== */
+.news-section {
+  position: relative;
+  overflow: visible;
+}
+
+/* CHARACTER */
+.news-character {
+  position: absolute;
+  left: -55px;
+  top: -190px;
+  height: 250px;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.9;
+  filter: drop-shadow(0 10px 30px rgba(0,0,0,0.5));
+}
+
+/* biar card di atas gambar */
+.news-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+
+/*===============REDEEEMMMM==============*/
+/* ===== SECTION ===== */
+.redeem-section {
+  background: #161616;
+  color: white;
+  text-align: center;
+  padding: 120px 0;
+  position: relative;
+}
+
+/* TITLE */
+.redeem-title {
+  font-size: 28px;
+  margin-bottom: 60px;
+}
+
+/* WRAPPER */
+.redeem-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 0px;
+}
+
+/* ===== CARD ===== */
+.redeem-card {
+  width: 520px;
+  height: 440px;
+  background: url("https://static.wikia.nocookie.net/gensin-impact/images/5/57/Version_1.1_Wallpaper_2.png/revision/latest/scale-to-width-down/1000?cb=20230805175132") center/cover no-repeat;
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 30px rgba(0,0,0,0.7);
+}
+
+.redeem-info {
+  width: 520px;          /* SAMAIN dengan kiri */
+  height: 440px;         /* SAMAIN dengan kiri */
+  background: #eee;
+  color: black;
+  border-radius: 18px;
+  padding: 25px;
+}
+
+/* OVERLAY */
+.redeem-overlay {
+  background: rgba(0,0,0,0.5); /* ✅ ganti ini */
+  height: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 25px;
+}
+
+/* TITLE DALAM CARD */
+.redeem-overlay h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+/* FORM */
+.form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group label {
+  font-size: 12px;
+  opacity: 0.7;
+  align-self: flex-start;
+  margin-left: 35px;
+}
+
+/* INPUT */
+.redeem-overlay input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.9);
+}
+
+/* BUTTON */
+.redeem-overlay button {
+  margin-top: 10px;
+  padding: 10px 25px;
+  background: black;
+  color: rgb(238, 137, 60);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.redeem-overlay button:hover {
+  background: #222;
+}
+
+/* ===== INFO BOX ===== */
+.redeem-info {
+  width: 320px;
+  background: #f1f1f1;
+  color: black;
+  border-radius: 18px;
+  padding: 25px;
+  text-align: left;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  z-index: 3;
+}
+
+.redeem-info h3 {
+  margin-bottom: 15px;
+}
+
+.redeem-info li {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+/* ===== CHARACTER ===== */
+.redeem-section {
+  position: relative;
+  overflow: visible;
+}
+
+/* CHARACTER */
+.redeem-character {
+  position: absolute;
+  right: 70px;/* MASUK ke kiri */
+  top: -250px;
+  height: 750px;
+  z-index: 1;     /* di atas card */
+  pointer-events: none;
+}
+
+/* biar card di atas gambar */
+.redeem-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .redeem-wrapper {
+    flex-direction: column;
+  }
+}
+/* ================= FOOTER ================= */
+.footer {
+  background: #0b0b0b;
+  color: #aaa;
+  padding: 40px 80px;
+  font-family: sans-serif;
+}
+
+/* TOP LINKS */
+.footer-top {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.footer-top a {
+  color: #aaa;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-top a:hover {
+  color: white;
+}
+
+/* MAIN */
+.footer-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-right {
+  max-width: 420px;
+}
+
+/* LEFT */
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-logos {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-logos img {
+  height: 40px;
+  margin-right: 20px;
+  overflow: 1;
+  filter: brightness(2);
+}
+
+.footer-social i {
+  margin-right: 15px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-social i:hover {
+  color: white;
+}
+
+/* DIVIDER */
+.footer-divider {
+  width: 1px;
+  height: 120px;
+  background: #444;
+}
+
+/* RIGHT */
+.footer-right {
+  max-width: 400px;
+  font-size: 12px;
+  display: flex;              /* TAMBAH INI */
+  flex-direction: column;     /* TAMBAH INI */
+  justify-content: center;    /* TAMBAH INI */
+  text-align: left;
+  margin-left: 60px;
+}
+
+.footer-right .rating {
+  width: 1px;   /* atur di sini */
+  height: 150;
+  background: #444;
+}
+
+.footer-right p {
+  margin-bottom: 10px;
+}
+
+.footer-right .small {
+  color: #777;
+}
+
+/* ================= ANIMATION ================= */
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
