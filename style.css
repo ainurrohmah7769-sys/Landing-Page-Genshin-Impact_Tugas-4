@@ -55,7 +55,7 @@ html {
 /* ================= HERO ================= */
 .hero{
     height:100vh;
-    background:url('hero.png') center/cover;
+    background:url('https://static1.srcdn.com/wordpress/wp-content/uploads/2021/09/Genshin-Impact-1-Year-Anniversary-Rewards-and-Events.jpg') center/cover;
     display:flex;
     align-items:center;
     justify-content:flex-start;
